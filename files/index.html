@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- This is an HTML5 document -->
+<html lang="en"> <!-- The primary language for this document -->
+<head> <!-- Contains meta-information about the document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for mobile devices -->
+    <title>Reaction Timer</title> <!-- Title of the document -->
+    <style> 
+        #stopButton {
+            width: 100px;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            border: none;
+            cursor: not-allowed;
+            display: inline-block;
+        } 
+        #startButton {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        } 
+        .input-field {
+            margin-bottom: 10px;
+        }
+        #log {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style> <!-- Contains CSS for styling the document -->
+</head> 
+<body> <!-- Contains the content of the document -->
+    <div> <!-- Contains the form elements for the user to input their details -->
+        <div class="input-field"> <!-- Contains the form elements for the user to input their details -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="input-field">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div> <!-- Contains the form elements for the user to input their details -->
+    </div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <p id="result"></p>
+
+    <div id="log"> 
+        <h3>Reaction Times Log</h3>
+        <ul id="logList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
